@@ -8,8 +8,9 @@ https://www.alphavantage.co/documentation/
 Source 2
 https://finnhub.io/docs/api/quote
 
-# Q# start server (default 127.0.0.1:8000)
+# Quick Start
 ```
+# start server (default 127.0.0.1:8000)
 # will collect data for ticker 'AAPL'
 python3 server.py
 
