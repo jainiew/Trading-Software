@@ -1,21 +1,23 @@
 # Trading-Software
 This app is a Trading Server and Simple Client Interface using the CLI. It is meant as a simple tool for storing stock data on a server and having a CLI tool to interact with said collected data. The application consists of 2 main software. The entire app follows the Client-Server architecture, where software 1 is the trading server, and software 2 is the client interface. The trading server is connected to a SQLite database to store data collected from api's using HTTP. The client software is implemented following a MVC design pattern. This project can easily be expanded upon using this design in the future.
 
-API's
-# Source 1
+## API's
+Source 1
 https://www.alphavantage.co/documentation/
 
-# Source 2
+Source 2
 https://finnhub.io/docs/api/quote
-Quick Start
-# start server (default 127.0.0.1:8000)
+
+# Q# start server (default 127.0.0.1:8000)
+```
 # will collect data for ticker 'AAPL'
 python3 server.py
 
 # connect to server (default 127.0.0.1:8000)
-python3 client.py
-Server flags
-# Download data for all the US tickers specified. If not specified, the server will download data for ticker 'AAPL'. (Max of 3 tickers)
+python3 client.pyuick Start
+```
+# Server flags
+Download data for all the US tickers specified. If not specified, the server will download data for ticker 'AAPL'. (Max of 3 tickers)
 --tickers ticker1[, ticker2[, ticker3]]
 
 # Specifies the network port for the server. This argument is optional, and the default port is 8000.
