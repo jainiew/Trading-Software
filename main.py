@@ -1,5 +1,5 @@
 import sys
-from Client import controller, service, APIaccess
+import controller, service, APIaccess
 
 
 def command_line(cmd, args):
