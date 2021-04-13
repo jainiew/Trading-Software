@@ -16,8 +16,9 @@ python3 server.py
 # connect to server (default 127.0.0.1:8000)
 python3 client.pyuick Start
 ```
-# Server flags
-Download data for all the US tickers specified. If not specified, the server will download data for ticker 'AAPL'. (Max of 3 tickers)
+## Server flags
+```
+# Download data for all the US tickers specified. If not specified, the server will download data for ticker 'AAPL'. (Max of 3 tickers)
 --tickers ticker1[, ticker2[, ticker3]]
 
 # Specifies the network port for the server. This argument is optional, and the default port is 8000.
@@ -28,7 +29,10 @@ Download data for all the US tickers specified. If not specified, the server wil
 
 # It specifies the sample data being downloaded. It only accepts (5, 15, 30, 60) as inputs, and default value is 5.
 --minutes XX
-Client flags
+```
+
+## Client flags
+```
 # query server for latest price available as of the time specified. The time queried is expected to be in UTC time.
 --price YYYY-MM-DD-HH-MM
 
@@ -49,3 +53,4 @@ Client flags
 # Instructs the server to reset all the data. Server must re-download data and tell client that it was sucessful
 # Client exists with return code: 0=success, 1=failure
 --reset
+```
