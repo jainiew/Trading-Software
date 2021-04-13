@@ -1,8 +1,8 @@
-from Server.__init__ import api_key
+from __init__ import api_key
 
 import flask
 from flask import request
-import Server.database as db
+import database as db
 import subprocess
 import sys
 
