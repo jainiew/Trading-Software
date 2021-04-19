@@ -15,7 +15,7 @@ https://finnhub.io/docs/api/quote
 python3 server.py
 
 # connect to server (default 127.0.0.1:8000)
-python3 client.py
+python3 main.py
 ```
 ## Server flags
 ```
